@@ -36,6 +36,16 @@ Directives are instructions in the DOM (Document Object Model) that extend HTML 
 - Attribute Directives: These directives change the appearance or behavior of an existing element. Examples include ngClass, ngStyle, and custom directives.
 Angular also allows developers to create custom directives to implement application-specific behaviors.
 
+### Angular Guards
+Guards are used to control the navigation flow within an application. They are used to protect certain routes or prevent unauthorized access to specific parts of an application. Guards are implemented as services and are used to perform checks before allowing the user to navigate to a particular route.
+
+There are different types of guards:
+- **CanActivate:** This guard is used to determine if a user can activate a specific route. It is commonly used for authentication purposes, ensuring that only authenticated users can access certain routes.
+- **CanActivateChild:** Similar to CanActivate, this guard is used to determine if a user can activate the child routes within a particular parent route.
+- **CanDeactivate:** This guard is used to determine if a user can leave a route. It is commonly used to ask for confirmation before navigating away from a page with unsaved changes.
+- **CanLoad:** This guard is used to determine if a user can load a feature module lazily. It is commonly used to prevent loading parts of an application that a user is not authorized to access.
+
+
 ## Angular Development
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
